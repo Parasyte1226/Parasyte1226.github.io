@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="tNumber">Тэгш сондгой</button>
+    <button id="hNumber">Хүрд</button>
+    <button id="dNumber">Дүн</button>
+        <p id="demo"></p>
+</body>
+<script>
+
+    var tButton = document.getElementById('tNumber')
+        tButton.onclick = ()=>{
+            var text;
+            for (var x=0; x<=20; x++) {
+        if (x === 0) {
+                text+=x +  " тэгш"+ "<br>";
+        }
+        else if (x % 2 === 0) {
+            text+=x + " тэгш"+ "<br>";   
+        }
+        else {
+                 text+=x + " сондгой"+ "<br>";
+        }
+}
+document.getElementById('demo').innerHTML = text;
+        }
+    
+    var hButton = document.getElementById('hNumber')
+    hButton.onclick = ()=>{
+        var i;
+    var j;
+    for (var i = 1; i <= 10; i++) {
+        for (var j = 1; j <= 10; j++) {
+             console.log(`${i}×${j}=${i * j}`)
+        }
+    }
+    }
+//yu bilee aimar ez yman deer tenegteed baih ym ?
+    var dButton = document.getElementById('dNumber')
+    dButton.onclick = ()=>{
+        for ( var f = 1; f <= 59; f++ )
+            {
+                console.log(f+'f')
+            }
+        for ( var d = 60; d <= 69; d++ )
+            {
+                console.log(d+'d')
+            }
+        for ( var d = 60; d <= 69; d++ )
+            {
+                console.log(d+'d')
+            }
+        for ( var c = 70; c <= 79; c++ )
+            {
+                console.log(c+'c')
+            }
+        for ( var b = 80; b <= 89; b++ )
+            {
+                console.log(b+'b')
+            }
+        for ( var a = 90; a <= 100; a++ )
+            {
+                console.log(a+'a')
+            }
+                
+    }
+
+
+
+</script>
+</html>

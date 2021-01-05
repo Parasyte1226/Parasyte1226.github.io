@@ -1,0 +1,52 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-image: url("bk1.jpg");
+    background-size: auto;
+    background-position: center;
+}
+.main {
+    background-color: rgba(0, 0, 0, 60%);
+    border-radius: 8%;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.button{
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 2;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.textview{
+    height: 40px;
+    width: 223px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+}
+.equal{
+    font-size: 15px;
+    border-radius: 10%;
+    width: 50px;
+    height: 110px;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 60%);
+    color: aqua;
+}
+.equal:hover{
+    background-color: rgba(0, 0, 0, 60%);
+    color: aqua;
+}
+form{
+    height: 40px;
+}
+h1{
+    color: rgba(0, 0, 0, 60%);
+    position: relative;
+    left: 34%;
+    top: 5%;
+}

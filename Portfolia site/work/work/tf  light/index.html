@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tf light</title>
+</head>
+<body>
+    <div class="container">
+        <div class="circle red" color="red"></div>
+        <div class="circle" color="yellow"></div>
+        <div class="circle" color="green"></div>
+      </div>
+      
+<script>
+    const circles = document.querySelectorAll('.circle')
+let activeLight = 0;
+
+setInterval(() => {
+  changeLight();
+}, 1000);
+
+function changeLight() {
+  circles[activeLight].className = 'circle';
+  activeLight++;
+  
+  if(activeLight > 2) {
+    activeLight = 0;
+  }
+  
+  const currentLight = circles[activeLight]
+  
+  currentLight.classList.add(currentLight.getAttribute('color'));
+}
+</script>
+</body>
+</html>

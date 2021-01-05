@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var calculator = new Object();
+
+calculator.add  = function (a,b) {
+    result = a + b;
+    alert(a + " + " + b + " = " + result);
+}
+
+calculator.substract = function (a,b) {
+    result = a - b;
+    alert(a + " - " + b + " = " + result);
+}
+
+calculator.divide = function (a,b) {
+    result = a / b;
+    alert(a + " / " + b + " = " + result);
+}
+
+calculator.multiply = function (a,b) {
+    result = a * b;
+    alert(a + " * " + b + " = " + result);
+}
+
+var menu = new Object();
+menu.quit = "Тэмдгээ сонгонуу. !\n Гарах бол quit"
+     
+var input = "";
+
+var a = 0;
+var b = 0;
+
+
+var showMenu = function () {
+
+    var list = [];
+
+    for (property in menu) {
+        list += menu[property];
+     }
+    input = prompt(list);
+}
+
+var isRightInput = function(symbol) {
+
+     if (symbol != "quit" && symbol != "+" && symbol != "-" && symbol != "*" && symbol != "/") {
+          alert("Зөв тэмдэгт оруулна уу !");
+          return false;
+     }
+     else {
+          return true;
+     }
+}
+
+
+var askNumbers = function() {
+     a = prompt ("Эхний тоо оруул");
+     b = prompt ("Хоёрдугаар тоо оруул");
+
+
+     a = parseInt(a);
+     b = parseInt(b);
+
+}
+//google search :P
+var calculateResult = function(a,b) {
+switch (input) {
+     case "+":
+
+          calculator.add(a,b);
+
+     break;
+
+     case "-":
+
+          calculator.substract(a,b);
+     break;
+
+     case "/":
+
+          calculator.divide(a,b);
+     break;
+
+     case "*":
+
+          calculator.multiply(a,b);
+     break;
+
+     case "quit":
+     break;
+}
+}
+
+do {
+
+     showMenu();
+
+     if (input === "quit") {
+        break;
+     }
+
+     else if (isRightInput(input) === true) {
+          askNumbers();
+          calculateResult(a,b);
+     }
+
+} while (input!= "quit");
+</script>
+</html>

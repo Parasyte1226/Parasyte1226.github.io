@@ -1,0 +1,58 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-image: url("list.jpg");
+}
+.main{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 60%);
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+.top{
+    width: 100%;
+    height: 20%;
+}
+.bottom{
+    width: 80%;
+    height: 70%;
+    overflow-y: scroll;
+    background-color: seashell;
+    margin: 10%;
+}
+.top * {
+    margin: 30px;
+    padding: 10px;
+}
+.myDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+}
+.number{
+    line-height: 30px;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+.display{
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    background-color: yellow;
+    float: left;
+}
+.btnC{
+    line-height: 30px;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    float: right;
+}

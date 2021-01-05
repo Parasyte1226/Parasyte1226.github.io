@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="huu">Хүү тооцох</button>
+    <button id="tsag">Цаг тоолох</button>
+    <button id="shat">Шат тоолох</button>
+</body>
+<script>
+    var hButton = document.getElementById('huu')
+    var tButton = document.getElementById('tsag')
+    var sButton = document.getElementById('shat')
+    hButton.onclick = ()=>{
+      var i = prompt('Мөнгөн дүн')
+        if(i = 123){
+            var z = prompt('Зорилтот дүн');
+                if(z = 200){
+                    alert('10 жил ')
+                }
+                else{
+                    alert('Something wrong :)')
+                }
+        }
+        else{
+            alert('Something wrong')
+        }
+    }
+    tButton.onclick = ()=>{
+        var i = prompt('Цаг хэд болж байна')
+        if(i = '12:30'){
+            var z = prompt('Зорилтот дүн');
+                if(z = 200){
+                    alert('10 жил ')
+                }
+                else{
+                    alert('Something wrong :)')
+                }
+        }
+        else{
+            alert('Something wrong :)')
+        }
+    }
+    
+    sButton.onclick = ()=>{}
+</script>
+</html>

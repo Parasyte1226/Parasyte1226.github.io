@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+#text {display:none;color:red}
+</style>
+<body>
+
+<h3>Detect Caps Lock</h3>
+<input id="myInput" value="Some text..">
+<p id="text"> Caps lock is ON.</p>
+
+<script>
+var input = document.getElementById("myInput");
+var text = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+</script>
+
+</body>
+</html>

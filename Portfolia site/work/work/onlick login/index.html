@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+    </head>
+<body>
+    <button id="btnL">Нэвтрэх</button>
+    <button id="btnO">Гарах</button>
+    <script>
+var Login = document.getElementById("btnL")
+var LoginOut = document.getElementById("btnO")
+var login = ["Та нэвтэрлээ !","Та нэвтэрсэн байна !"]
+var loginin = 0
+var out = ["Та гарлаа!","Та гарсан байна !","Та нэвтэрнүү !"]
+var lout = 0
+Login.onclick = () =>{
+   alert(login[loginin])
+   loginin++
+   if(loginin == login.length){
+       loginin = 0
+   }
+}
+LoginOut.onclick = () =>{
+    alert(out[lout])
+    lout++
+    if(lout == out.length){
+        lout = 0
+    }
+}
+    </script>
+</body>
+</html>
